@@ -162,4 +162,11 @@ function Message() {
 }
  function Download() {
     document.getElementById("img").style.display = "block";
+     document.getElementById("ca1").style.display = "block";
+      document.getElementById("demo").innerHTML = " Download Resume";
+ }
+ function ca() {
+   document.getElementById("img").style.display = "none";
+    document.getElementById("ca1").style.display = "none";
+     document.getElementById("demo").innerHTML = " show Resume";
  }

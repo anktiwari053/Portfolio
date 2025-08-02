@@ -869,3 +869,7 @@ section {
 #img {
     display: none;
 }
+.cansila {
+    font-size: 3vh;
+    display: none;
+}
