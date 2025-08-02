@@ -160,3 +160,6 @@ function Message() {
     window.location.href = "premtiwar704@gmail.com?subject=Hello&body=Yeh mera message hai";
 
 }
+ function Download() {
+    document.getElementById("img").style.display = "block";
+ }

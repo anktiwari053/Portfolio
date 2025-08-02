@@ -859,3 +859,13 @@ section {
         font-size: 3rem;
     }
 } 
+
+.download-icon{
+    height: 100%;
+    width: 60%;
+    
+   z-index: 10;
+}
+#img {
+    display: none;
+}
