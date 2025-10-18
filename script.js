@@ -48,11 +48,11 @@ if (contactForm) {
         // Get form data
         const name = this.querySelector('input[type="text"]').value;
         const email = this.querySelector('input[type="email"]').value;
-        const subject = this.querySelectorAll('input[type="text"]')[1].value;
+        
         const message = this.querySelector('textarea').value;
         
         // Basic validation
-        if (!name || !email || !subject || !message) {
+        if (!name || !email || !message) {
             alert('Please fill in all fields');
             return;
         }
@@ -98,7 +98,7 @@ document.querySelectorAll('.social-link').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
         const platform = link.querySelector('i').className;
-        alert(`Opening ${platform.includes('github') ? 'https://github.com/anktiwari053' : 
+        alert(`Opening ${platform.includes('github') ? 'GitHub' : 
                platform.includes('linkedin') ? 'LinkedIn' : 
                platform.includes('twitter') ? 'Twitter' : 'Instagram'}...`);
     });
@@ -139,27 +139,6 @@ activeNavStyles.textContent = `
 `;
 document.head.appendChild(activeNavStyles); 
 
-
-function submit () {
-    window.open("https://github.com/anktiwari053", "Github");
-
-}
-function submit1 () {
-    window.open("linkedin.com/in/ank-tiwari-257101302", "linkedin");
-
-}
-function submit2 () {
-    window.open("https://leetcode.com/u/anktiwari053/", "Leetcode");
-
-}
-function submit3 () {
-    window.open("https://www.instagram.com/anktiwari053?igsh=MWltY2M2aWtibjN3MQ==", "Instagram");
-
-}
-function Message() {
-    window.location.href = "premtiwar704@gmail.com?subject=Hello&body=Yeh mera message hai";
-
-}
  function Download() {
     document.getElementById("img").style.display = "block";
      document.getElementById("ca1").style.display = "block";
@@ -170,3 +149,16 @@ function Message() {
     document.getElementById("ca1").style.display = "none";
      document.getElementById("demo").innerHTML = " show Resume";
  }
+
+
+ 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw1UTJNsR4Yivv3tHngsnIS3yC5b3m_Ne60W0hDx4VyJf6e7OLQ3k8W3f99PFHwxcg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+ 

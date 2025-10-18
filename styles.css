@@ -148,7 +148,7 @@ body {
 }
 
 .highlight {
-    color: #e9ce8a;
+    color: #fbbf24;
     position: relative;
 }
 
@@ -230,7 +230,7 @@ body {
 .profile-card {
     width: 400px;
     height: 400px;
-    background-image: url(profile2.jpg);
+    background-image: url("profile2.jpg");
     background-size: cover;
     
     border-radius: 50%;
@@ -354,7 +354,7 @@ section {
     
     border-radius: 50%;
      background-size: cover;
-    background-image: url(about.jpeg);
+    background-image: url(photo/about.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -485,6 +485,21 @@ section {
     font-size: 0.875rem;
     font-weight: 500;
 }
+
+.download-icon{
+    height: 100%;
+    width: 60%;
+    
+   z-index: 10;
+}
+#img {
+    display: none;
+}
+
+
+
+
+
 
 .project-links {
     display: flex;
@@ -860,15 +875,6 @@ section {
     }
 } 
 
-.download-icon{
-    height: 100%;
-    width: 60%;
-    
-   z-index: 10;
-}
-#img {
-    display: none;
-}
 .cansila {
     font-size: 3vh;
     display: none;
